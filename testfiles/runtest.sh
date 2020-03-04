@@ -47,5 +47,23 @@ wait
 
 echo ''
 echo '*************************************************'
+echo '********** Local file, relative path   **********'
+echo '*************************************************'
+echo ''
+
+java $CLASSPATH $CLASS "test001.treefile"
+wait
+
+echo ''
+echo '*************************************************'
+echo '********** Local file, absolute path   **********'
+echo '*************************************************'
+echo ''
+
+java $CLASSPATH $CLASS "/Users/ali/Code/Java/BinaryTree/testfiles/test001.treefile"
+wait
+
+echo ''
+echo '*************************************************'
 echo '********** End command line tests      **********'
 echo '*************************************************'
