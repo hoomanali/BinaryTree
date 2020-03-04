@@ -1,6 +1,10 @@
 package com.alihooman;
 
+import com.alihooman.utils.TreeFileHandler;
+
 public class BinaryTree {
+
+    static String TAG ="[BinaryTree - Main] ";
 
     /**
      * Main entry point for BinaryTree application.
@@ -8,6 +12,13 @@ public class BinaryTree {
      */
     public static void main(String[] args) {
         checkArgs(args);
+
+        TreeFileHandler treeFileHandler = new TreeFileHandler();
+        if(treeFileHandler.setFilePath(args[0])) {
+            System.out.println(TAG + "Path is " + treeFileHandler.getFilePath().toString());
+        } else {
+            System.exit(0);
+        }
     }
 
     /**
@@ -18,7 +29,6 @@ public class BinaryTree {
      * @param args Command line arguments.
      */
     static void checkArgs(String[] args) {
-        final String TAG ="[BinaryTree] ";
 
         if(args.length < 1) {
             System.out.println(TAG + "No filename provided.");
@@ -28,9 +38,6 @@ public class BinaryTree {
             System.out.println(TAG + "Too many arguments, use quotes for filenames containing spaces");
             System.out.println(TAG + "Usage: java BinaryTree \"file name\"");
             System.exit(0);
-        } else {
-            //TODO Check if file exists and is valid.
-            System.out.println(TAG + "Tree file: " + args[0]);
         }
     }
 }
