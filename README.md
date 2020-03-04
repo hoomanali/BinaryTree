@@ -19,8 +19,8 @@ Handles all operations for files that store the node structure and values for bi
 
 ### Methods
 
-#### createFilePath()
-Takes a filename or full path as a string and verifies that the path is valid and the file exists.
+#### setFilePath()
+Takes a filename or full path as a string and verifies that the path is valid and the file exists. Returns true if path and file are valid.
 
 #### readTreeFile()
 Takes a binary tree file name and/or directory as a parameter and returns an array representing the nodes of a binary tree.
