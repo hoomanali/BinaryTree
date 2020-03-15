@@ -28,7 +28,7 @@ public class BinaryTree {
      * and proceeds.
      * @param args Command line arguments.
      */
-    static void checkArgs(String[] args) {
+    private static void checkArgs(String[] args) {
 
         if(args.length < 1) {
             System.out.println(TAG + "No filename provided.");
