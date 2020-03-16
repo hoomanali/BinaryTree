@@ -12,7 +12,8 @@ public class TreeFileHandler {
     /**
      * Blank constructor for TreeFileHandler class.
      */
-    public TreeFileHandler() {
+    public TreeFileHandler(String path) {
+        setFilePath(path);
     }
 
     /**
@@ -22,6 +23,15 @@ public class TreeFileHandler {
      * @return True if path is valid and file exists.
      */
     public boolean setFilePath(String path) {
+        if(path == null) {
+            System.out.println(TAG + "Path not set, path is null.");
+            return false;
+        }
+        if(path.equals("")) {
+            System.out.println(TAG + "Path not set, no path given.");
+            return false;
+        }
+
         // Create path
         this.path = Paths.get(path);
 

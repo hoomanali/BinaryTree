@@ -1,7 +1,7 @@
 package com.alihooman;
 
 /**
- * Manages and binary tree related operations.
+ * Manages all binary tree related operations.
  */
 public class TreeManager {
 }
