@@ -1,10 +1,17 @@
 package com.alihooman;
 
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BinaryTreeTest {
 
-    @org.junit.jupiter.api.Test
-    void main() {
+    String TAG = "[BinaryTree - Main]";
+
+    @Test
+    void mainNoArgs() {
     }
 }
