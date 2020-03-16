@@ -24,7 +24,7 @@ public class MainHelper {
      * @return True if args array has exactly one element.
      */
     private static boolean hasOneElement(String[] args) {
-        if(args.length < 0 || args.length > 1) {
+        if(args.length < 1 || args.length > 1) {
             return false;
         }
         return true;

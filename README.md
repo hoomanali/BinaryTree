@@ -23,19 +23,9 @@ the file containing the list of nodes of a Binary Tree.
 ### Usage
 java BinaryTree /path/to/file`
 
-### Methods
+## utils.MainHelper
+Static class for helper methods used in main.
 
-#### checkArgs()
-Verifies the number of arguments provided. If less than one argument, print usage then quit.
-If more than one argument, print usage and recommend using quotes then quit.
-
-## TreeFileHandler
+## utils.TreeFileHandler
 Handles all operations for files that store the node structure and values for binary trees.
 
-### Methods
-
-#### setFilePath()
-Takes a filename or full path as a string and verifies that the path is valid and the file exists. Returns true if path and file are valid.
-
-#### readTreeFile()
-Takes a binary tree file name and/or directory as a parameter and returns an array representing the nodes of a binary tree.
