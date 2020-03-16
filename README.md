@@ -23,6 +23,9 @@ the file containing the list of nodes of a Binary Tree.
 ### Usage
 java BinaryTree /path/to/file`
 
+## TreeManager
+Manages all binary tree related operations.
+
 ## utils.MainHelper
 Static class for helper methods used in main.
 

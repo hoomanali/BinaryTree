@@ -10,6 +10,5 @@ public class BinaryTree {
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
-        MainHelper.checkArgs(args);
     }
 }
